@@ -32,7 +32,7 @@ return {
       lspconfig.ts_ls.setup({
         capabilities = capabilities,
         filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
-        root_dir = lspconfig.util.root_pattern("tsconfig.json", "jsconfig.json", "package.json", ".git"),
+        root_dir = lspconfig.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".eslintrc.js", ".prettierrc", ".git"),
         })
 
       -- HTML (for .html files, Emmet completions, etc.)
