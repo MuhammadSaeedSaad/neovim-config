@@ -3,7 +3,7 @@ return {
     "Shatur/neovim-ayu",
     config = function()
       require('ayu').setup({
-        mirage = false,  -- Use mirage background for floats
+        mirage = false, -- Use mirage background for floats
         overrides = {}, -- Custom highlight overrides
       })
 
@@ -12,7 +12,9 @@ return {
     end,
   },
   {
-    "catppuccin/nvim", name = "catppuccin", priority = 1000,
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
     config = function()
       require("catppuccin").setup({
         term_colors = true,
@@ -29,7 +31,7 @@ return {
     -- priority = 1000,
     config = function()
       require("tokyonight").setup({
-        style = "night",  -- or "night", "storm", "day"
+        style = "night",    -- or "night", "storm", "day"
         transparent = true, -- if you want transparent background
       })
       -- vim.cmd.colorscheme("tokyonight")
@@ -65,7 +67,7 @@ return {
     -- priority = 1000,
     config = function()
       require("onedark").setup({
-        style = "deep", -- or "deep", "cool", "warm", "warmer", "light"
+        style = "deep",     -- or "deep", "cool", "warm", "warmer", "light"
         transparent = true, -- if you want transparent background
       })
       -- vim.cmd.colorscheme("onedark")
